@@ -1,6 +1,8 @@
 import 'package:clone_nubank/pages/home/account/account.dart';
 import 'package:clone_nubank/pages/home/creditsCards/my_credits_card_page.dart';
+import 'package:clone_nubank/pages/home/investiments/investiments.dart';
 import 'package:clone_nubank/pages/home/model/header.dart';
+import 'package:clone_nubank/pages/home/security/security_life.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -25,8 +27,8 @@ class _HomePageState extends State<HomePage> {
         child: Container(
           color: Colors.white,
           child: const Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Header(),
               AccountNubank(),
@@ -37,6 +39,10 @@ class _HomePageState extends State<HomePage> {
               NotificationsPage(),
               Divider(thickness: 1.6),
               CreditCard(),
+              Divider(thickness: 1.6),
+              Investiments(),
+              Divider(thickness: 1.6),
+              SecurityLife(),
             ],
           ),
         ),
