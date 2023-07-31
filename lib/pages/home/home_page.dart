@@ -3,11 +3,13 @@ import 'package:clone_nubank/pages/home/creditsCards/my_credits_card_page.dart';
 import 'package:clone_nubank/pages/home/investiments/investiments.dart';
 import 'package:clone_nubank/pages/home/model/header.dart';
 import 'package:clone_nubank/pages/home/security/security_life.dart';
+import 'package:clone_nubank/pages/home/shopping/shopping_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'actions/menu_itens.dart';
 import 'creditsCards/credit_card.dart';
+import 'findOut/find_out.dart';
 import 'notiication/notification_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -43,6 +45,10 @@ class _HomePageState extends State<HomePage> {
               Investiments(),
               Divider(thickness: 1.6),
               SecurityLife(),
+              Divider(thickness: 1.6),
+              ShoppingView(),
+              Divider(thickness: 1.6),
+              FindOutMore(),
             ],
           ),
         ),
